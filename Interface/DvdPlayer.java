@@ -19,7 +19,7 @@ public class DvdPlayer implements MediaPlayer {
 	@Override
 	public void playNextTrack(String nextTrack) {
 	
-		System.out.println(">||" + nextTrack + " on DVD Player");
+		System.out.println(">>||" + nextTrack + " on DVD Player");
 		
 	}
 
