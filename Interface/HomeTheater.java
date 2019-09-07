@@ -19,7 +19,7 @@ public class HomeTheater implements MediaPlayer {
 	@Override
 	public void playNextTrack(String nextTrack) {
 		
-		System.out.println(">||" + nextTrack + " on Home Theater ");
+		System.out.println(">>||" + nextTrack + " on Home Theater ");
 		
 	}
 
