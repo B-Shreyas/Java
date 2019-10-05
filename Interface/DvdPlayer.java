@@ -1,12 +1,12 @@
-package hashMap;
+
 
 public class DvdPlayer implements MediaPlayer {
 
 	@Override
-	public void powerOn() {
+	public boolean powerOn() {
 		
 		System.out.println("Dvd Player is ON");
-		
+		return true;
 	}
 
 	@Override
@@ -33,6 +33,12 @@ public class DvdPlayer implements MediaPlayer {
 	public void stop() {
 		
 		System.out.println("The Music has stopped");
+		
+	}
+
+	@Override
+	public void addMusic(String songName, String singer, float songLength) {
+		// TODO Auto-generated method stub
 		
 	}
 

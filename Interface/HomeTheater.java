@@ -1,12 +1,11 @@
-package hashMap;
 
 public class HomeTheater implements MediaPlayer {
 
 	@Override
-	public void powerOn() {
+	public boolean powerOn() {
 		
 		System.out.println("HomeTheater is ON");
-		
+		return true;
 	}
 
 	@Override
@@ -33,6 +32,12 @@ public class HomeTheater implements MediaPlayer {
 	public void stop() {
 		
 		System.out.println("The HomeTheater's music has stopped");
+		
+	}
+
+	@Override
+	public void addMusic(String songName, String singer, float songLength) {
+		// TODO Auto-generated method stub
 		
 	}
 
