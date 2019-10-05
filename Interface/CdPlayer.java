@@ -1,13 +1,15 @@
-package hashMap;
+
 
 public class CdPlayer implements MediaPlayer {
 
+
 	@Override
-	public void powerOn() {
+	public boolean powerOn() {
 		
 		System.out.println("CD Player is On");
-		
+		return true;
 	}
+
 
 	@Override
 	public void playMusic() {
@@ -32,5 +34,12 @@ public class CdPlayer implements MediaPlayer {
 		
 		System.out.println("The music track has stopped ");
 		}
+
+
+	@Override
+	public void addMusic(String songName, String singer, float songLength) {
+		// TODO Auto-generated method stub
+		
+	}
 
 }

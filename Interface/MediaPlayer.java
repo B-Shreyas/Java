@@ -1,8 +1,9 @@
-package hashMap;
+
 
 public interface MediaPlayer {
 	
-	void powerOn();
+	boolean powerOn();
+	void addMusic(String songName, String singer, float songLength);
 	void playMusic();
 	void playNextTrack(String nextTrack);
 	boolean isPlaying();
