@@ -1,7 +1,9 @@
-
+import java.util.ArrayList;
+import java.util.Scanner;
 
 public class CdPlayer implements MediaPlayer {
 
+	Scanner scanner = new Scanner(System.in);
 
 	@Override
 	public boolean powerOn() {
@@ -12,9 +14,21 @@ public class CdPlayer implements MediaPlayer {
 
 
 	@Override
-	public void playMusic() {
-		
-		System.out.println("The music track is playing");
+	public void playMusic(ArrayList<Song> songsLibrary) {
+		System.out.println("Press 1 to play song");
+		int play = scanner.nextInt();
+		int i = 0;
+		while(play == 1 || play == 1) {
+			System.out.println("Playing : " + songsLibrary.get(i).songName);
+			i++;
+			System.out.println("Press 1 to play next song or 2 to stop playing");
+			play = scanner.nextInt();
+			if (i == songsLibrary.size()) {
+				System.out.println("All songs are played!");
+				break;
+			}
+		}
+		System.out.println("Exiting the Music Library");
 	}
 
 	@Override
